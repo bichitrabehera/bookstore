@@ -6,12 +6,14 @@ require('dotenv').config();
 
 const port = process.env.PORT || 5000;
 
+app.use(cors())
+
 // ✅ CORS middleware — before any routes
-app.use(cors({
-  origin: 'https://bookstore-seven-peach.vercel.app', // ❗ no trailing slash, not an array
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}));
+// app.use(cors({
+//   origin: 'https://bookstore-seven-peach.vercel.app', // ❗ no trailing slash, not an array
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   credentials: true
+// }));
 
 // ✅ Optional: handles CORS preflight requests
 app.options('*', cors());
