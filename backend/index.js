@@ -14,7 +14,7 @@ require('dotenv').config()
 app.use(express.json());
 app.use(cors(
    {
-     origin: ["https://bookstore-1-1w8z.onrender.com"],
+     origin: ["https://bookstore-seven-peach.vercel.app/"],
      methods: ['GET', 'POST', 'PUT', 'DELETE'],
      credentials: true,
    }
