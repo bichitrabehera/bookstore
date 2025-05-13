@@ -14,7 +14,7 @@ require('dotenv').config()
 app.use(express.json());
 app.use(cors(
    {
-     origin: ['http://localhost:5173'],
+     origin: ["https://bookstore-1-1w8z.onrender.com"],
      methods: ['GET', 'POST', 'PUT', 'DELETE'],
      credentials: true,
    }
