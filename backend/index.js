@@ -12,13 +12,14 @@ require('dotenv').config()
 
 //middleware
 app.use(express.json());
-app.use(cors(
-   {
-     origin: ["https://bookstore-seven-peach.vercel.app/"],
-     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-     credentials: true,
-   }
-));
+app.use(cors({
+  origin: [
+    "https://bookstore-seven-peach.vercel.app"
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
+
 
 // app.post('/orders', (req, res) => {
 //   // Logic for creating an order
